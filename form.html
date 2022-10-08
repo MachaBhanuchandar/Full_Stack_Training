@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .form-input {
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+    <title>
+        Form Demo
+    </title>
+
+</head>
+
+<body>
+
+    <div style="border: 5px solid;">
+        <form name="regestration form">
+            <div class="form-input">
+                <label>First name</label>
+                <input type="text" name="fname" value="" placeholder="enter firs tname" />
+            </div>
+            <div class="form-input">
+                <label>last name</label>
+                <input type="text" name="lname" value="" placeholder="enter last name" />
+            </div>
+            <div class="form-input">
+                <label>Email id</label>
+                <input type="email" name="email" value="" placeholder="enter email id" />
+            </div>
+            <div class="form-input">
+                <label>password </label>
+                <input type="password" name="password" value="" placeholder="enter password" />
+            </div>
+            <div class="form-input">
+                <label>DOB : </label>
+                <input type="date" name="dob" placeholder="enter dob" value="" />
+            </div>
+            <div class="form-input">
+                <label>profile pic </label>
+                <input type="file" name="profilepic" placeholder="enter file" />
+            </div>
+            <div class="form-input">
+                <label>Gender: </label>
+                <label> male:</label>
+                <input type="radio" name="gender" />
+                <label> female:</label>
+                <input type="radio" name="gender" />
+            </div>
+            <div class="form-input">
+                <label>Course: </label>
+                <label> BTech:</label>
+                <input type="checkbox" name="Course" />
+                <label> MTech:</label>
+                <input type="checkbox" name="Course" />
+            </div>
+            <div class="form-input">
+                <label>Country</label>
+                <select name="country">
+                    <option value="india">india</option>
+                    <option value="aus">aus</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <input type="submit" name="button" value="save data" />
+                <input type="reset" value="reset data" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
