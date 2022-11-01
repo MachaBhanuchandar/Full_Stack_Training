@@ -15,6 +15,20 @@
 
         ul li:hover {
             color: red;
+            background-color: green;
+        }
+
+        .submenu {
+            height: 150px;
+            width: 150px;
+            display: none;
+            list-style-type: none;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .course-menu:hover .submenu {
+            display: block;
         }
     </style>
 </head>
@@ -29,7 +43,16 @@
             <li>Home</li>
             <li>About Us</li>
             <li>Contact Us</li>
-            <li>Courses</li>
+            <li class="course-menu">Courses
+                <ul class="submenu">
+                    <li>
+                        c
+                    </li>
+                    <li>cpp</li>
+                    <li>opps</li>
+                </ul>
+
+            </li>
 
         </ul>
 
