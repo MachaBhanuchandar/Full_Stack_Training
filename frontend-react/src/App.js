@@ -4,6 +4,10 @@ import Employee from './Employee';
 import Company from './company';
 import { user } from './Moduledemo.js'
 import Data from './ToDo';
+import Article from './Article';
+import UseStateF from './hooks/useStateF';
+import ContextHookDemo from './hooks/useContexDemo';
+import UseReducerHookDemo from './hooks/useReduserDemo';
 function App() {
   // console.log(user)
   // let msg = "good morning"  //templets literals
@@ -48,7 +52,11 @@ function App() {
       {/* <Header /> */}
       {/* <Employee /> */}
       {/* <Company company="Careerx" /> */}
-      <Data />
+      {/* <Data /> */}
+      {/* <Article /> */}
+      {/* <UseStateF /> */}
+      {/* <ContextHookDemo /> */}
+      <UseReducerHookDemo />
     </div>
   );
 }
