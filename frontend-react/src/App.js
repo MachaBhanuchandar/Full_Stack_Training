@@ -8,6 +8,7 @@ import Article from './Article';
 import UseStateF from './hooks/useStateF';
 import ContextHookDemo from './hooks/useContexDemo';
 import UseReducerHookDemo from './hooks/useReduserDemo';
+import UseRefDEmo from './hooks/useRefDemo';
 function App() {
   // console.log(user)
   // let msg = "good morning"  //templets literals
@@ -56,7 +57,8 @@ function App() {
       {/* <Article /> */}
       {/* <UseStateF /> */}
       {/* <ContextHookDemo /> */}
-      <UseReducerHookDemo />
+      {/* <UseReducerHookDemo />
+      <UseRefDEmo /> */}
     </div>
   );
 }
