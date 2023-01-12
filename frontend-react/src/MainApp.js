@@ -5,6 +5,7 @@ import HeaderPage from "./pages/Headerpage";
 import StudentPage from "./pages/StudentPage";
 import HomePage from "./pages/Homepage";
 import StudentList from "./pages/studentList";
+import UserCurd from "./pages/UsersCurd";
 function MainApp() {
 
     return (
@@ -17,6 +18,7 @@ function MainApp() {
                     <Route path="/employe" element={<EmployePage />}></Route>
                     <Route path="/" element={<HomePage />}></Route>
                     <Route path="/studentList" element={<StudentList />}></Route>
+                    <Route path="/usersCurd" element={<UserCurd />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>

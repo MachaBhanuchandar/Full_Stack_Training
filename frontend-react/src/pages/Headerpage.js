@@ -36,6 +36,11 @@ function HeaderPage() {
                                 Student
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/usersCurd">
+                                UserCurd
+                            </Link>
+                        </li>
 
                     </ul>
                     <form className="d-flex">
