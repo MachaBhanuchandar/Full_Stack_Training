@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .form-input {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>
+        Enquiry Form
+    </title>
+
+</head>
+
+<body>
+
+    <div style="border: 1px solid;width:fit-content;display: flex;">
+
+        <form style="background-color:rgb(105, 229, 10) ;" class="enquiry form">
+            <div>
+                <h1 style="text-align: center;">ENQUIRY</h1>
+                <div class="form-input">
+                    <label>Select the State</label>
+                    <div>
+                        <select name="country">
+                            <option value="AndhraPradesh">AndhraPradesh</option>
+                            <option value="Kerela">Kelera</option>
+                            <option value="TamilNadu">TamilNadu</option>
+                            <option value="Telengana">Telengana</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+
+                        <input type="text" name="name" value="" placeholder="Enter Name" />
+                    </div>
+
+                    <div class="form-input">
+
+                        <input type="email" name="email" value="" placeholder="Enter Email id" />
+                    </div>
+
+                    <div class="form-input">
+                        <label>DOB : </label>
+                        <input type="date" name="dob" placeholder="enter dob" value="" />
+                    </div>
+                    <div class="form-input">
+
+                        <input type="text" name="phonenumber" value="" placeholder="Enter phone number" />
+                    </div>
+                    <div class="form-input">
+
+                        <input type="text" name="address" value="" placeholder="Enter complete Address" />
+                    </div>
+                    <div class="form-input">
+                        <label>Enter Your Query:</label>
+                        <textarea rows="2" col="10" placeholder="Query"></textarea>
+                    </div>
+
+
+
+                    <div class="form-input">
+                        <input type="submit" name="button" value="Submit" />
+
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Merging
+    </title>
+</head>
+
+<body>
+    <script>
+        let nums1 = [1, 2, 3, 4]
+        let nums2 = [3, 4, 5, 6]
+
+        // Elements of nums1 and nums2 concatenated and returns
+        // combined array - combinedSum array
+        let combined = nums1.concat(nums2);
+        let combinedNums = [].concat(nums1, nums2)
+        console.log("Combined linked list :", combinedNums)
+        combinedNums.sort(function (a, b) {
+            return a - b
+        });
+        console.log("Elements in Assending order:", combinedNums)
+    </script>
+</body>
+
+</html>

@@ -17,10 +17,25 @@ function showA() {
 }
 showA()
 
-// block scope (let,const)
-{
-    let f = 45;
-    const a = 63;
-    console.log(f, a)
-}
-console.log(f, a);
+// // block scope (let,const)
+// {
+//     let f = 45;
+//     const a = 63;
+//     console.log(f, a)
+// }
+// console.log(f, a);
+
+var button = document.createElement("button");
+button.innerHTML = "save";
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+button.addEventListener("click", function () {
+    alert("did somthing");
+});
+
+let a = String("Bhanu");
+console.log(typeof a)
+
+let b = isNaN(123)
+// let b = numtostr(a)
+console.log(b)

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Division
+    </title>
+</head>
+
+<body>
+    <script>
+        function divide(dividend, divisor) {
+            let sign = ((dividend < 0) ^ (divisor < 0)) ? -1 : 1;
+
+            dividend = Math.abs(dividend);
+            divisor = Math.abs(divisor);
+
+            // Initialize the quotient
+            let quotient = 0;
+            while (dividend >= divisor) {
+                dividend -= divisor;
+                ++quotient;
+            }
+            //if the sign value computed earlier is -1 then neglate the value of quotient
+            if (sign == -1) quotient = -quotient;
+            return quotient;
+        }
+
+        // Divide code
+        let a = 10, b = 3;
+        document.write(divide(a, b) + "<br>");
+
+        a = 43, b = -8;
+        document.write(divide(a, b));    
+    </script>
+
+</body>
+
+</html>

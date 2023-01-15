@@ -5,7 +5,7 @@ var mongoose = require("mongoose");
 var app = express();
 const router = express.Router();
 var port = 5000
-mongoose.connect("mongodb://localhost:27017/emp_curd")
+//mongoose.connect("mongodb://localhost:27017/emp_curd")
 app.use(cors())
 var users = require('./routes/users')
 var employee = require('./routes/employee')

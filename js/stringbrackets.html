@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Brackets Comparision
+    </title>
+</head>
+
+<body>
+    <script>
+
+        // Javascript program for checking balanced brackets
+
+
+        function areBracketsBalanced(expr) {
+            let stack = [];
+            for (let i = 0; i < expr.length; i++) {
+                let x = expr[i];
+
+                if (x == '(' || x == '[' || x == '{') {
+                    stack.push(x);
+                    continue;
+                }
+                if (stack.length == 0)
+                    return false;
+
+                let check;
+                switch (x) {
+                    case ')':
+                        check = stack.pop();
+                        if (check == '{' || check == '[')
+                            return false;
+                        break;
+
+                    case '}':
+                        check = stack.pop();
+                        if (check == '(' || check == '[')
+                            return false;
+                        break;
+
+                    case ']':
+                        check = stack.pop();
+                        if (check == '(' || check == '{')
+                            return false;
+                        break;
+                }
+            }
+            return (stack.length == 0);
+        }
+        let expr = "([{}])";
+
+        // Function call
+        if (areBracketsBalanced(expr))
+            console.log(" true");
+        else
+            console.log("flase");
+
+        let exp = "([{]])";
+
+        // Function call
+        if (areBracketsBalanced(exp))
+            console.log(" true");
+        else
+            console.log("flase");
+
+    </script>
+
+</body>
+
+</html>

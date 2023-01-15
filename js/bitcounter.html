@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Bit counter
+    </title>
+
+</head>
+
+<body>
+    <script>
+        var hammingWeight = function (n) {
+            var mask = 1;
+            var count = 0;
+            for (let i = 0; i < 8; i++) {
+
+                if ((mask & n) != 0) {
+
+                    count++;
+                }
+                mask <<= 1;
+
+            }
+            return count;
+        };
+        var n = hammingWeight(10101100);
+        console.log(n)
+    </script>
+</body>
+
+</html>
