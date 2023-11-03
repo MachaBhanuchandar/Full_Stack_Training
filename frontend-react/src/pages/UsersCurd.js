@@ -160,7 +160,7 @@ function UsersCurd() {
                                 <td>{user.salary}</td>
                                 <td>
                                     <button onClick={() => deleteUser(user)} className="btn btn-danger">delete</button>
-                                    <button onClick={() => updateUser(user)} className="btn btn-primary">edit</button>
+                                    <button onC lick={() => updateUser(user)} className="btn btn-primary">edit</button>
                                 </td>
                             </tr>
                         );
